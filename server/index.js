@@ -1,13 +1,25 @@
-import express from "express";
+// express is a library that helps us to create a server and handle requests
+import express from "express"; 
+// body-parser is a library that helps us to parse the body of the request and get the data from it
 import bodyParser from "body-parser";
+// mongoose is a library that helps us to connect to the database and create models and schemas for the data
 import mongoose from "mongoose";
+// cors is a library that helps us to handle cross-origin requests (requests from different domains)
 import cors from "cors";
+// dotenv is a library that helps us to store our environment variables in a .env file and access them in our code using process.env
 import dotenv from "dotenv";
+// multer is a library that helps us to handle file uploads in our requests (images, videos, etc.)
 import multer from "multer";
+// helmet is a library that helps us to secure our express app by setting various HTTP headers (security)
 import helmet from "helmet";
+// morgan is a library that helps us to log requests to our server in the console (development)
 import morgan from "morgan";
+// path is a library that helps us to get the current directory path (used for file storage)
 import path from "path";
+// fileURLToPath is a function that helps us to get the current directory path (used for file storage)
 import { fileURLToPath } from "url";
+
+//
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
